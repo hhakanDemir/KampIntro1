@@ -12,13 +12,28 @@ namespace OOP3
         static void Main(string[] args)
         {
             IKrediManager ihtiyacKrediManeger = new IhtiyacKrediManager();
-            ihtiyacKrediManeger.Hesapla();
-
-            IKrediManager tasitKrediManeger = new TasitKrediManager();
-            tasitKrediManeger.Hesapla();
-
+            IKrediManager aracKrediManeger = new AracKrediManager();
             IKrediManager konutKrediManeger = new KonutKrediManager();
-            konutKrediManeger.Hesapla();
+            IKrediManager esnafKrediManeger = new EsnafKredisiManager();
+
+
+            //Kredi çesitlerini IKrediManeger türünde bir değişken olarak tanımladık.
+            //Bu değişkenler artık ilgili classların referanslarını tutabilir.
+
+            ILoggerService databaseLoggerService = new DatabaseLoggerService(); 
+            ILoggerService fileLoggerService = new FileLoggerService();
+            ILoggerService smsLoggerService = new SmsLoggerServis();
+
+            BasvuruManager basvuruManeger = new BasvuruManager();
+            basvuruManeger.BasvuruYap(esnafKrediManeger, smsLoggerService);
+
+            List<IKrediManager> krediler = new List<IKrediManager>() { ihtiyacKrediManeger, konutKrediManeger };
+
+            //basvuruManeger.KrediOnBilgilendirme(krediler);
+
+
+            
+           
         }
     }
 }

@@ -1,0 +1,3 @@
+﻿Interface
+
+BasvuruManeger class ına IKrediManager ı yazdık bu sayede hangi kredi türünü yolarsak o türde hesaplama yapar.
