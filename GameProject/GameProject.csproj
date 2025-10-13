@@ -43,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gamer.cs" />
-    <Compile Include="GamerManager.cs" />
+    <Compile Include="CampanyManager.cs" />
+    <Compile Include="Gamer\Gamer.cs" />
+    <Compile Include="Gamer\GamerManager.cs" />
+    <Compile Include="ICampanyServis.cs" />
     <Compile Include="IGamerService.cs" />
+    <Compile Include="IOrderService.cs" />
+    <Compile Include="Gamer\IUserValidationService.cs" />
+    <Compile Include="Gamer\NewEStateUserValidationManager.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Gamer\UserValidationManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

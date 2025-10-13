@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameProject
 {
-    internal class Gamer
+    internal interface IUserValidationService
     {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
+        bool Validate(Gamer gamer);
+
     }
 }

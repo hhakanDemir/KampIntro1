@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace GameProject
 {
-    internal interface IGamerService
+    internal class Order
     {
-        void Add(Gamer gamer);
-
-        void Update(Gamer gamer);
-
-        void Delete(Gamer gamer);
-
-
-
+        public int Id { get; set; }
+        public string ProductName { get; set; }
+        public int ProductPrice { get; set; }
     }
 }

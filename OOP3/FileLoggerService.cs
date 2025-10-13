@@ -6,7 +6,7 @@ namespace OOP3
     {
         public void Log()
         {
-            Console.WriteLine("Dosyaya LOGlandi");
+            Console.WriteLine("Dosyaya LOGlandi.Hadi Bakalım");
         }
     }
 }

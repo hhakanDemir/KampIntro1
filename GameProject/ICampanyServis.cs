@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace GameProject
 {
-    internal interface IGamerService
+    internal interface ICampanyServis
     {
-        void Add(Gamer gamer);
-
-        void Update(Gamer gamer);
-
-        void Delete(Gamer gamer);
-
-
+        void CampanySale();
+        void CampanyAdd();
+        void CampanyUpdate();
+        void CampanyDelete();
 
     }
 }
