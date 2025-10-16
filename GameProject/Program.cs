@@ -23,7 +23,24 @@ namespace GameProject
 
             Console.WriteLine("--------------------------------------------------");
 
-            //OrderManager orderManager = new OrderManager(new ICampanyServis());
+            Order order = new Order
+            {
+                OrderId = 1,
+                GamerId = 1,
+                Price = 100,
+                ProductName = "Oyun"
+            };
+
+
+            OrderManager orderManager = new OrderManager();
+            orderManager.Order(order);
+
+            Campaing campaing = new Campaing();
+            campaing.CampaingRate = 20;
+
+            CampaingManager campaingManager = new CampaingManager();
+            campaingManager.Anounce(campaing);
+
         }
     }
 }

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameProject
 {
-    internal interface IOrderService
+    internal interface ICampaingService
     {
-
-        void Order(Order order);
-
+        void Anounce(Campaing capaing);
     }
 }

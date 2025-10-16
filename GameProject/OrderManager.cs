@@ -8,20 +8,17 @@ namespace GameProject
 {
     internal class OrderManager : IOrderService
     {
-        ICampanyServis _campanyServis;
 
-        public OrderManager(ICampanyServis campanyServis) 
-        {
-            _campanyServis = campanyServis;
-        }
-        public void Bill()
-        {
-            throw new NotImplementedException();
-        }
+        ICampaingService _campaingService; 
 
+        public IsCampaing(ICampaingService campaingService)
+        {
+            _campaingService = campaingService;
+          
+        }
         public void Order(Order order)
         {
-            Console.WriteLine("satis yapildi");            
+            Console.WriteLine("Siparis alındı");
         }
     }
 }

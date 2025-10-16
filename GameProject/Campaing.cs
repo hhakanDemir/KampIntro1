@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameProject
 {
-    internal interface ICampanyServis
+    internal class Campaing
     {
-        void CampanySale();
-        void CampanyAdd();
-        void CampanyUpdate();
-        void CampanyDelete();
-
+        public int CampaingRate { get; set; }
     }
 }
